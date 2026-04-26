@@ -58,17 +58,27 @@ export default function Work() {
 
     ScrollTrigger.batch(cardEls, {
       onEnter: (elements) => {
-        gsap.to(elements, {
-          y: 0,
-          opacity: 1,
+        gsap.from(elements, {
+          y: 60,
+          opacity: 0,
           duration: 1,
           stagger: 0.15,
           ease: 'power3.out',
         })
       },
-      start: 'top 88%',
+      start: 'top 85%',
       once: true,
     })
+
+    ScrollTrigger.refresh()
+
+    setTimeout(() => {
+      const stuckCards = containerRef.current?.querySelectorAll('.project-card')
+      stuckCards?.forEach((card) => {
+        const el = card as HTMLElement
+        if (el.style.opacity === '0' || el.style.opacity === '') return
+      })
+    }, 2000)
 
     return () => {
       cleanups.forEach((fn) => fn())
@@ -94,7 +104,6 @@ export default function Work() {
             <Link key={project.number} href={`/work/${project.slug}`} className="block">
               <article
                 className="project-card relative flex cursor-pointer items-center gap-6 overflow-hidden border-t border-[#1f1f1f] py-8 md:gap-10"
-                style={{ opacity: 0, transform: 'translateY(60px)' }}
               >
 
                 {/* Hover background — scaleX animated by GSAP */}
