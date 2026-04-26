@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+
+  <!-- Divider -->
+  <line x1="400" y1="20" x2="400" y2="385" stroke="#ffffff" stroke-width="0.5" opacity="0.12"/>
+
+  <!-- ── LEFT: GOOGLE SEARCH ── -->
+
+  <text x="35" y="38" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.3" letter-spacing="3">SEARCH RANKINGS</text>
+
+  <!-- Search bar -->
+  <rect x="35" y="48" width="320" height="30" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+  <!-- Search icon -->
+  <circle cx="56" cy="63" r="6" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+  <line  x1="60" y1="67" x2="65" y2="72" stroke="#ffffff" stroke-width="0.75" opacity="0.5"/>
+  <text x="78" y="68" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.65">restaurante ciudad de mexico</text>
+
+  <!-- Result #1 — CLIENT (highlighted) -->
+  <rect x="35" y="100" width="320" height="72" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.85"/>
+  <!-- Rank badge -->
+  <rect x="35" y="100" width="22" height="72" stroke="none" fill="none"/>
+  <text x="46" y="140" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.9">#1</text>
+  <line x1="57" y1="100" x2="57" y2="172" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <!-- Result content -->
+  <text x="70" y="118" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.9">Restaurante Mx — El mejor de CDMX</text>
+  <text x="70" y="132" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.4">restaurantemx.com › inicio</text>
+  <text x="70" y="148" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.55">La experiencia gastronómica más completa</text>
+  <text x="70" y="162" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.55">de la Ciudad de México. Reserva en línea.</text>
+  <!-- Star rating -->
+  <text x="70" y="176" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.6">★★★★★ 4.9  ·  312 reseñas</text>
+
+  <!-- Result #2 -->
+  <rect x="35" y="188" width="320" height="60" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.35"/>
+  <text x="46" y="214" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.3">#2</text>
+  <line x1="57" y1="188" x2="57" y2="248" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="70" y="206" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.3">Restaurante Competidor A</text>
+  <text x="70" y="220" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.2">competidor-a.com › menu</text>
+  <text x="70" y="234" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.2">Gastronomía de autor en el corazón...</text>
+
+  <!-- Result #3 -->
+  <rect x="35" y="262" width="320" height="60" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.2"/>
+  <text x="46" y="287" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.2">#3</text>
+  <line x1="57" y1="262" x2="57" y2="322" stroke="#ffffff" stroke-width="0.5" opacity="0.1"/>
+  <text x="70" y="280" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.15">Restaurante Competidor B</text>
+  <text x="70" y="294" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.1">competidor-b.mx</text>
+  <text x="70" y="308" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.1">Cocina tradicional mexicana desde...</text>
+
+  <!-- SEO stats -->
+  <text x="35"  y="355" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.35">DA SCORE</text>
+  <text x="35"  y="368" font-family="monospace" font-size="9" fill="#ffffff" opacity="0.7">42 → 68</text>
+  <text x="155" y="355" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.35">KEYWORDS</text>
+  <text x="155" y="368" font-family="monospace" font-size="9" fill="#ffffff" opacity="0.7">+340</text>
+  <text x="255" y="355" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.35">POSITION</text>
+  <text x="255" y="368" font-family="monospace" font-size="9" fill="#ffffff" opacity="0.7">12.4 → 1.2</text>
+
+  <!-- ── RIGHT: BAR CHART ── -->
+
+  <text x="430" y="38" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.3" letter-spacing="3">CONVERSION METRICS</text>
+
+  <!-- Chart axes -->
+  <line x1="460" y1="320" x2="760" y2="320" stroke="#ffffff" stroke-width="0.75" opacity="0.5"/>
+  <line x1="460" y1="320" x2="460" y2="60"  stroke="#ffffff" stroke-width="0.75" opacity="0.5"/>
+
+  <!-- Y axis ticks and labels -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.3">
+    <line x1="455" y1="60"  x2="460" y2="60"/>
+    <line x1="455" y1="125" x2="460" y2="125"/>
+    <line x1="455" y1="190" x2="460" y2="190"/>
+    <line x1="455" y1="255" x2="460" y2="255"/>
+  </g>
+  <g font-family="monospace" font-size="7" fill="#ffffff" text-anchor="end" opacity="0.35">
+    <text x="452" y="63">400</text>
+    <text x="452" y="128">300</text>
+    <text x="452" y="193">200</text>
+    <text x="452" y="258">100</text>
+  </g>
+
+  <!-- Grid lines -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.07" stroke-dasharray="4 6">
+    <line x1="460" y1="60"  x2="760" y2="60"/>
+    <line x1="460" y1="125" x2="760" y2="125"/>
+    <line x1="460" y1="190" x2="760" y2="190"/>
+    <line x1="460" y1="255" x2="760" y2="255"/>
+  </g>
+
+  <!-- Group 1: Leads -->
+  <!-- ANTES bar (short) -->
+  <rect x="490" y="255" width="36" height="65" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+  <!-- DESPUÉS bar (tall) -->
+  <rect x="534" y="125" width="36" height="195" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.9"/>
+  <text x="532" y="336" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">LEADS</text>
+  <text x="508" y="248" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">100</text>
+  <text x="552" y="118" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.8">390</text>
+
+  <!-- Group 2: Reservas -->
+  <rect x="600" y="222" width="36" height="98" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+  <rect x="644" y="95"  width="36" height="225" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.9"/>
+  <text x="642" y="336" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">RESERVAS</text>
+  <text x="618" y="215" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">150</text>
+  <text x="662" y="88"  font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.8">360</text>
+
+  <!-- Group 3: Revenue -->
+  <rect x="706" y="190" width="36" height="130" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+  <rect x="706" y="190" width="36" height="130" stroke="none" fill="none"/>
+  <!-- just outline -->
+  <text x="724" y="336" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">REVENUE</text>
+  <text x="724" y="183" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">200</text>
+
+  <!-- Legend -->
+  <rect x="466" y="356" width="10" height="8" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <text x="482" y="363" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.4">ANTES</text>
+  <rect x="530" y="356" width="10" height="8" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.9"/>
+  <text x="546" y="363" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.7">DESPUÉS</text>
+
+  <!-- Up arrow indicator -->
+  <text x="700" y="363" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.6">↑ 3.2×</text>
+
+</svg>

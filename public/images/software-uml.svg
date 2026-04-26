@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+
+  <!-- ── CLASS: User ── x=55, y=55, w=200, h=290 -->
+  <rect x="55" y="55" width="200" height="290" stroke="#ffffff" stroke-width="1" fill="none"/>
+  <!-- Class name header -->
+  <line x1="55" y1="80" x2="255" y2="80" stroke="#ffffff" stroke-width="0.75" opacity="0.6"/>
+  <text x="155" y="72" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">User</text>
+  <!-- Stereotype -->
+  <text x="155" y="63" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.35">«entity»</text>
+
+  <!-- Attributes -->
+  <text x="70"  y="98"  font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- id : string</text>
+  <text x="70"  y="113" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- name : string</text>
+  <text x="70"  y="128" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- email : string</text>
+  <text x="70"  y="143" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- role : UserRole</text>
+  <text x="70"  y="158" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- createdAt : Date</text>
+  <!-- Separator -->
+  <line x1="55" y1="168" x2="255" y2="168" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+
+  <!-- Methods -->
+  <text x="70"  y="185" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ login() : void</text>
+  <text x="70"  y="200" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ logout() : void</text>
+  <text x="70"  y="215" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ getOrders() : Order[]</text>
+  <text x="70"  y="230" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ updateProfile()</text>
+  <text x="70"  y="245" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ resetPassword()</text>
+  <!-- Separator -->
+  <line x1="55" y1="256" x2="255" y2="256" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <!-- Constraints section -->
+  <text x="70"  y="272" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">«constraints»</text>
+  <text x="70"  y="285" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">email must be unique</text>
+  <text x="70"  y="298" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">id auto-generated UUID</text>
+  <text x="70"  y="311" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">role ∈ {admin, user}</text>
+  <text x="70"  y="335" font-family="monospace" font-size="6"   fill="#ffffff" opacity="0.18">@Entity · @Table("users")</text>
+
+  <!-- ── CLASS: Order ── x=300, y=55, w=200, h=290 -->
+  <rect x="300" y="55" width="200" height="290" stroke="#ffffff" stroke-width="1" fill="none"/>
+  <line x1="300" y1="80" x2="500" y2="80" stroke="#ffffff" stroke-width="0.75" opacity="0.6"/>
+  <text x="400" y="72" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">Order</text>
+  <text x="400" y="63" font-family="monospace" font-size="6"  fill="#ffffff" text-anchor="middle" opacity="0.35">«entity»</text>
+
+  <text x="315" y="98"  font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- id : string</text>
+  <text x="315" y="113" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- userId : string</text>
+  <text x="315" y="128" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- total : number</text>
+  <text x="315" y="143" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- status : OrderStatus</text>
+  <text x="315" y="158" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- items : OrderItem[]</text>
+  <line x1="300" y1="168" x2="500" y2="168" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="315" y="185" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ create() : Order</text>
+  <text x="315" y="200" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ cancel() : void</text>
+  <text x="315" y="215" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ getItems() : Item[]</text>
+  <text x="315" y="230" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ calculateTotal()</text>
+  <text x="315" y="245" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ getPayment()</text>
+  <line x1="300" y1="256" x2="500" y2="256" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="315" y="272" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">«constraints»</text>
+  <text x="315" y="285" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">total ≥ 0</text>
+  <text x="315" y="298" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">status ∈ {pending,paid}</text>
+  <text x="315" y="311" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">userId must exist</text>
+  <text x="315" y="335" font-family="monospace" font-size="6"   fill="#ffffff" opacity="0.18">@Entity · @Table("orders")</text>
+
+  <!-- ── CLASS: Payment ── x=545, y=55, w=200, h=290 -->
+  <rect x="545" y="55" width="200" height="290" stroke="#ffffff" stroke-width="1" fill="none"/>
+  <line x1="545" y1="80" x2="745" y2="80" stroke="#ffffff" stroke-width="0.75" opacity="0.6"/>
+  <text x="645" y="72" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">Payment</text>
+  <text x="645" y="63" font-family="monospace" font-size="6"  fill="#ffffff" text-anchor="middle" opacity="0.35">«entity»</text>
+
+  <text x="560" y="98"  font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- id : string</text>
+  <text x="560" y="113" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- orderId : string</text>
+  <text x="560" y="128" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- amount : number</text>
+  <text x="560" y="143" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- method : PayMethod</text>
+  <text x="560" y="158" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.75">- paidAt : Date</text>
+  <line x1="545" y1="168" x2="745" y2="168" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+
+  <text x="560" y="185" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ process() : void</text>
+  <text x="560" y="200" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ refund() : void</text>
+  <text x="560" y="215" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ verify() : boolean</text>
+  <text x="560" y="230" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ getReceipt() : string</text>
+  <text x="560" y="245" font-family="monospace" font-size="7.5" fill="#ffffff" opacity="0.6">+ dispute(reason)</text>
+  <line x1="545" y1="256" x2="745" y2="256" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="560" y="272" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">«constraints»</text>
+  <text x="560" y="285" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">amount = order.total</text>
+  <text x="560" y="298" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">method ∈ {card,cash}</text>
+  <text x="560" y="311" font-family="monospace" font-size="6.5" fill="#ffffff" opacity="0.3">orderId must exist</text>
+  <text x="560" y="335" font-family="monospace" font-size="6"   fill="#ffffff" opacity="0.18">@Entity · @Table("payments")</text>
+
+  <!-- ── RELATIONSHIP: User (1) — (0..*) Order ── -->
+  <!-- Line between right edge of User and left edge of Order -->
+  <line x1="255" y1="200" x2="300" y2="200" stroke="#ffffff" stroke-width="0.75" opacity="0.7"/>
+  <!-- Open arrowhead at Order end -->
+  <polyline points="294,195 300,200 294,205" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <!-- Multiplicity labels -->
+  <text x="260" y="196" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.6">1</text>
+  <text x="282" y="196" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.6">0..*</text>
+  <!-- Relationship label -->
+  <text x="277" y="215" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.35">places</text>
+
+  <!-- ── RELATIONSHIP: Order (1) — (0..1) Payment ── -->
+  <line x1="500" y1="200" x2="545" y2="200" stroke="#ffffff" stroke-width="0.75" opacity="0.7"/>
+  <polyline points="539,195 545,200 539,205" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <text x="505" y="196" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.6">1</text>
+  <text x="527" y="196" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.6">0..1</text>
+  <text x="522" y="215" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.35">has</text>
+
+</svg>

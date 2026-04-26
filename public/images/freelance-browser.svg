@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+
+  <!-- Browser outer frame -->
+  <rect x="55" y="18" width="690" height="368" stroke="#ffffff" stroke-width="1" fill="none"/>
+
+  <!-- Chrome bar background line -->
+  <line x1="55" y1="50" x2="745" y2="50" stroke="#ffffff" stroke-width="0.75" opacity="0.5"/>
+
+  <!-- Window control dots -->
+  <circle cx="82"  cy="34" r="5" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <circle cx="100" cy="34" r="5" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <circle cx="118" cy="34" r="5" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+
+  <!-- URL bar -->
+  <rect x="148" y="24" width="480" height="20" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <!-- Lock icon -->
+  <rect x="158" y="29" width="7" height="7" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <text x="173" y="38" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.5">restaurantemx.com</text>
+  <!-- Refresh icon area -->
+  <text x="640" y="37" font-family="monospace" font-size="8" fill="#ffffff" opacity="0.3">↺</text>
+
+  <!-- ── WEBSITE CONTENT BEGINS ── -->
+
+  <!-- Nav bar -->
+  <rect x="55" y="50" width="690" height="36" stroke="none" fill="none"/>
+  <text x="95"  y="73" font-family="monospace" font-size="8"  fill="#ffffff" opacity="0.9" letter-spacing="2">RESTAURANTE</text>
+  <text x="530" y="73" font-family="monospace" font-size="7"  fill="#ffffff" opacity="0.5">MENÚ</text>
+  <text x="598" y="73" font-family="monospace" font-size="7"  fill="#ffffff" opacity="0.5">RESERVAS</text>
+  <text x="670" y="73" font-family="monospace" font-size="7"  fill="#ffffff" opacity="0.5">CONTACTO</text>
+  <line x1="55" y1="86" x2="745" y2="86" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Hero section -->
+  <!-- Hero decorative lines -->
+  <line x1="55"  y1="140" x2="100" y2="140" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <line x1="700" y1="140" x2="745" y2="140" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Hero text -->
+  <text x="400" y="142" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.3" letter-spacing="4">BIENVENIDOS</text>
+  <text x="400" y="168" font-family="monospace" font-size="22" fill="#ffffff" text-anchor="middle" opacity="0.95" letter-spacing="-0.5">Reserva tu Mesa</text>
+  <text x="400" y="188" font-family="monospace" font-size="8"  fill="#ffffff" text-anchor="middle" opacity="0.4">Experiencia gastronómica única · Ciudad de México</text>
+
+  <!-- CTA Button -->
+  <rect x="328" y="200" width="144" height="30" stroke="#ffffff" stroke-width="0.75" fill="none"/>
+  <text x="400" y="220" font-family="monospace" font-size="8" fill="#ffffff" text-anchor="middle">RESERVAR AHORA →</text>
+
+  <!-- Divider line above cards -->
+  <line x1="55" y1="248" x2="745" y2="248" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+
+  <!-- 3 Content cards -->
+  <!-- Card 1 -->
+  <rect x="72"  y="258" width="196" height="108" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+  <line x1="72" y1="278" x2="268" y2="278" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="170" y="272" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.4">01</text>
+  <text x="170" y="298" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">MENÚ</text>
+  <text x="170" y="312" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">DEGUSTACIÓN</text>
+  <text x="170" y="332" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">7 tiempos · maridaje incluido</text>
+  <text x="170" y="356" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">Ver menú →</text>
+
+  <!-- Card 2 -->
+  <rect x="302" y="258" width="196" height="108" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+  <line x1="302" y1="278" x2="498" y2="278" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="400" y="272" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.4">02</text>
+  <text x="400" y="298" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">EVENTOS</text>
+  <text x="400" y="312" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">PRIVADOS</text>
+  <text x="400" y="332" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">Bodas · corporativos</text>
+  <text x="400" y="356" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">Cotizar →</text>
+
+  <!-- Card 3 -->
+  <rect x="532" y="258" width="196" height="108" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+  <line x1="532" y1="278" x2="728" y2="278" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="630" y="272" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.4">03</text>
+  <text x="630" y="298" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">TERRAZA</text>
+  <text x="630" y="312" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.85">PANORÁMICA</text>
+  <text x="630" y="332" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.35">Vista a la ciudad · al aire libre</text>
+  <text x="630" y="356" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">Explorar →</text>
+
+  <!-- Footer strip -->
+  <line x1="55" y1="374" x2="745" y2="374" stroke="#ffffff" stroke-width="0.5" opacity="0.15"/>
+  <text x="400" y="385" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.2">© 2024 Restaurante · CDMX · contacto@restaurantemx.com</text>
+
+</svg>

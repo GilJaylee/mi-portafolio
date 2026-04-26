@@ -1,26 +1,63 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  *, *::before, *::after {
+    background-color: revert;
+  }
+  html, body {
+    background-color: #080808 !important;
   }
 }
 
+:root {
+  --black: #080808;
+  --surface: #0f0f0f;
+  --offwhite: #f0ede6;
+  --lime: #c8ff00;
+
+  --font-system: var(--font-dm-sans), system-ui, sans-serif;
+  --font-mono: var(--font-dm-mono), monospace;
+}
+
+@theme inline {
+  --color-black: var(--black);
+  --color-surface: var(--surface);
+  --color-offwhite: var(--offwhite);
+  --color-lime: var(--lime);
+  --font-sans: var(--font-system);
+}
+
+*,
+*::before,
+*::after {
+  cursor: none !important;
+}
+
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+  background: #080808 !important;
+  color: var(--offwhite);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+/* ── Global grain overlay ──────────────────────────────────────────────────
+   The SVG filter alone produces no pixels — a <rect> must apply it.
+   stitchTiles='stitch' ensures the 256×256 tile tessellates seamlessly.
+   pointer-events:none + z-index:9999 keeps it above everything but non-blocking. */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  opacity: 0.035;
 }

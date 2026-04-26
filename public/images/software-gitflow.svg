@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+
+  <!-- ── LEFT: KANBAN BOARD ── -->
+
+  <!-- Board outer frame -->
+  <rect x="22" y="22" width="352" height="358" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.6"/>
+
+  <!-- Board title -->
+  <line x1="22" y1="42" x2="374" y2="42" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+  <text x="198" y="36" font-family="monospace" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.5" letter-spacing="3">KANBAN</text>
+
+  <!-- Column dividers -->
+  <line x1="139" y1="42" x2="139" y2="380" stroke="#ffffff" stroke-width="0.5" opacity="0.25"/>
+  <line x1="256" y1="42" x2="256" y2="380" stroke="#ffffff" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Column headers -->
+  <line x1="22" y1="62" x2="374" y2="62" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="80"  y="56" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.45" letter-spacing="1">BACKLOG</text>
+  <text x="197" y="56" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.45" letter-spacing="1">IN PROGRESS</text>
+  <text x="315" y="56" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.45" letter-spacing="1">DONE</text>
+
+  <!-- Count badges -->
+  <circle cx="118" cy="53" r="7" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <text x="118" y="57" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.5">3</text>
+  <circle cx="235" cy="53" r="7" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <text x="235" y="57" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.5">2</text>
+  <circle cx="352" cy="53" r="7" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <text x="352" y="57" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.5">2</text>
+
+  <!-- ── BACKLOG CARDS ── -->
+
+  <!-- Card B1 -->
+  <rect x="32" y="72" width="98" height="54" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <line x1="32" y1="84" x2="130" y2="84" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="40"  y="81" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.35">FEAT · HIGH</text>
+  <text x="81"  y="100" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle">Feature A</text>
+  <text x="81"  y="113" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.4">User auth flow</text>
+
+  <!-- Card B2 -->
+  <rect x="32" y="136" width="98" height="54" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <line x1="32" y1="148" x2="130" y2="148" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="40"  y="145" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.35">BUG · MED</text>
+  <text x="81"  y="164" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle">Bug Fix B</text>
+  <text x="81"  y="177" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.4">Login redirect</text>
+
+  <!-- Card B3 -->
+  <rect x="32" y="200" width="98" height="54" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <line x1="32" y1="212" x2="130" y2="212" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="40"  y="209" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.35">REFAC · LOW</text>
+  <text x="81"  y="228" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle">Refactor C</text>
+  <text x="81"  y="241" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.4">DB queries</text>
+
+  <!-- ── IN PROGRESS CARDS ── -->
+
+  <!-- Card IP1 (with progress indicator) -->
+  <rect x="148" y="72" width="100" height="54" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.9"/>
+  <line x1="148" y1="84" x2="248" y2="84" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="156" y="81" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.35">FEAT · HIGH</text>
+  <!-- Avatar circle -->
+  <circle cx="237" cy="79" r="5" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <text x="237" y="82" font-family="monospace" font-size="5" fill="#ffffff" text-anchor="middle" opacity="0.5">G</text>
+  <text x="198" y="100" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle">Feature D</text>
+  <text x="198" y="113" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.4">Dashboard UI</text>
+  <!-- Progress bar -->
+  <rect x="156" y="117" width="84" height="4" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <rect x="156" y="117" width="56" height="4" stroke="none" fill="#ffffff" opacity="0.4"/>
+
+  <!-- Card IP2 -->
+  <rect x="148" y="136" width="100" height="54" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.9"/>
+  <line x1="148" y1="148" x2="248" y2="148" stroke="#ffffff" stroke-width="0.5" opacity="0.3"/>
+  <text x="156" y="145" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.35">TEST · MED</text>
+  <circle cx="237" cy="143" r="5" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <text x="237" y="146" font-family="monospace" font-size="5" fill="#ffffff" text-anchor="middle" opacity="0.5">G</text>
+  <text x="198" y="164" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle">Tests E</text>
+  <text x="198" y="177" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.4">Unit + E2E</text>
+  <rect x="156" y="181" width="84" height="4" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <rect x="156" y="181" width="34" height="4" stroke="none" fill="#ffffff" opacity="0.4"/>
+
+  <!-- ── DONE CARDS ── -->
+
+  <!-- Card D1 -->
+  <rect x="265" y="72" width="100" height="54" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.45"/>
+  <line x1="265" y1="84" x2="365" y2="84" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="273" y="81" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.2">DONE ✓</text>
+  <text x="315" y="100" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle" opacity="0.4">Setup F</text>
+  <text x="315" y="113" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.25">Project scaffold</text>
+
+  <!-- Card D2 -->
+  <rect x="265" y="136" width="100" height="54" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.45"/>
+  <line x1="265" y1="148" x2="365" y2="148" stroke="#ffffff" stroke-width="0.5" opacity="0.2"/>
+  <text x="273" y="145" font-family="monospace" font-size="6" fill="#ffffff" opacity="0.2">DONE ✓</text>
+  <text x="315" y="164" font-family="monospace" font-size="7.5" fill="#ffffff" text-anchor="middle" opacity="0.4">Auth G</text>
+  <text x="315" y="177" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.25">JWT setup</text>
+
+  <!-- Board bottom label -->
+  <text x="198" y="375" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.2">SPRINT 3 · 2 / 7 COMPLETE</text>
+
+  <!-- ── SEPARATOR ── -->
+  <line x1="400" y1="22" x2="400" y2="380" stroke="#ffffff" stroke-width="0.5" opacity="0.12"/>
+
+  <!-- ── RIGHT: GIT FLOW ── -->
+
+  <text x="598" y="36" font-family="monospace" font-size="8" fill="#ffffff" text-anchor="middle" opacity="0.5" letter-spacing="3">GIT FLOW</text>
+
+  <!-- Branch labels -->
+  <text x="416" y="95"  font-family="monospace" font-size="7" fill="#ffffff" opacity="0.55">main</text>
+  <text x="416" y="190" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.55">dev</text>
+  <text x="416" y="295" font-family="monospace" font-size="7" fill="#ffffff" opacity="0.55">feature</text>
+
+  <!-- ── main branch ── -->
+  <line x1="454" y1="90" x2="770" y2="90" stroke="#ffffff" stroke-width="1" opacity="0.7"/>
+
+  <!-- main commits -->
+  <circle cx="470" cy="90" r="6" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="560" cy="90" r="6" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="690" cy="90" r="6" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="760" cy="90" r="6" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+
+  <!-- main commit labels -->
+  <text x="470" y="78" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.3">v1.0</text>
+  <text x="560" y="78" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.3">v1.1</text>
+  <text x="690" y="78" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.3">v1.2</text>
+  <text x="760" y="78" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.3">HEAD</text>
+
+  <!-- merge from main → dev (init) -->
+  <line x1="470" y1="90" x2="470" y2="185" stroke="#ffffff" stroke-width="0.5" opacity="0.3" stroke-dasharray="4 4"/>
+
+  <!-- ── dev branch ── -->
+  <line x1="470" y1="185" x2="770" y2="185" stroke="#ffffff" stroke-width="0.75" opacity="0.6"/>
+
+  <!-- dev commits -->
+  <circle cx="470" cy="185" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="510" cy="185" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="550" cy="185" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="630" cy="185" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+  <circle cx="690" cy="185" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+
+  <!-- dev commit hash labels -->
+  <text x="510" y="173" font-family="monospace" font-size="5.5" fill="#ffffff" text-anchor="middle" opacity="0.25">a3f2c</text>
+  <text x="550" y="173" font-family="monospace" font-size="5.5" fill="#ffffff" text-anchor="middle" opacity="0.25">b8d91</text>
+  <text x="630" y="173" font-family="monospace" font-size="5.5" fill="#ffffff" text-anchor="middle" opacity="0.25">merge</text>
+
+  <!-- ── feature branch ── -->
+  <!-- Branch off from dev at x=510 -->
+  <line x1="510" y1="185" x2="510" y2="290" stroke="#ffffff" stroke-width="0.5" opacity="0.4" stroke-dasharray="3 3"/>
+  <!-- Feature branch line -->
+  <line x1="510" y1="290" x2="630" y2="290" stroke="#ffffff" stroke-width="0.75" opacity="0.5"/>
+
+  <!-- feature commits -->
+  <circle cx="550" cy="290" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808" opacity="0.8"/>
+  <circle cx="590" cy="290" r="5" stroke="#ffffff" stroke-width="0.75" fill="#080808" opacity="0.8"/>
+
+  <!-- feature commit labels -->
+  <text x="550" y="278" font-family="monospace" font-size="5.5" fill="#ffffff" text-anchor="middle" opacity="0.25">f01a</text>
+  <text x="590" y="278" font-family="monospace" font-size="5.5" fill="#ffffff" text-anchor="middle" opacity="0.25">f02b</text>
+
+  <!-- Merge back: feature → dev at x=630 -->
+  <line x1="630" y1="290" x2="630" y2="190" stroke="#ffffff" stroke-width="0.5" opacity="0.4" stroke-dasharray="3 3"/>
+
+  <!-- PR label box -->
+  <rect x="598" y="232" width="58" height="22" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <text x="627" y="245" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.8">PR #42</text>
+
+  <!-- Merge arrow to dev -->
+  <polyline points="624,191 630,185 636,191" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+
+  <!-- Merge to main at x=690 -->
+  <line x1="690" y1="185" x2="690" y2="96" stroke="#ffffff" stroke-width="0.5" opacity="0.35" stroke-dasharray="3 3"/>
+  <polyline points="684,96 690,90 696,96" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.5"/>
+
+  <!-- TAG: release -->
+  <rect x="678" y="98" width="44" height="16" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.5"/>
+  <text x="700" y="110" font-family="monospace" font-size="6" fill="#ffffff" text-anchor="middle" opacity="0.6">release</text>
+
+  <!-- HOTFIX branch (from main x=760, brief) -->
+  <line x1="760" y1="90" x2="760" y2="130" stroke="#ffffff" stroke-width="0.5" opacity="0.3" stroke-dasharray="3 4"/>
+  <circle cx="760" cy="138" r="4" stroke="#ffffff" stroke-width="0.5" fill="#080808" opacity="0.5"/>
+  <text x="772" y="141" font-family="monospace" font-size="5.5" fill="#ffffff" opacity="0.3">hotfix</text>
+  <line x1="760" y1="142" x2="760" y2="180" stroke="#ffffff" stroke-width="0.5" opacity="0.2" stroke-dasharray="3 4"/>
+
+  <!-- Legend -->
+  <g opacity="0.4">
+    <line x1="418" y1="330" x2="445" y2="330" stroke="#ffffff" stroke-width="1"/>
+    <circle cx="425" cy="330" r="4" stroke="#ffffff" stroke-width="0.75" fill="#080808"/>
+    <text x="450" y="334" font-family="monospace" font-size="6.5" fill="#ffffff">commit</text>
+
+    <line x1="418" y1="348" x2="445" y2="348" stroke="#ffffff" stroke-width="0.5" stroke-dasharray="3 3"/>
+    <text x="450" y="352" font-family="monospace" font-size="6.5" fill="#ffffff">branch / merge</text>
+
+    <rect x="418" y="360" width="28" height="14" stroke="#ffffff" stroke-width="0.5" fill="none"/>
+    <text x="450" y="371" font-family="monospace" font-size="6.5" fill="#ffffff">pull request</text>
+  </g>
+
+</svg>

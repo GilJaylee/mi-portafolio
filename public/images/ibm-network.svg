@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+
+  <!-- Hub-spoke radial connections -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.45">
+    <line x1="400" y1="175" x2="495" y2="175"/>
+    <line x1="400" y1="175" x2="477" y2="231"/>
+    <line x1="400" y1="175" x2="429" y2="265"/>
+    <line x1="400" y1="175" x2="371" y2="265"/>
+    <line x1="400" y1="175" x2="323" y2="231"/>
+    <line x1="400" y1="175" x2="305" y2="175"/>
+    <line x1="400" y1="175" x2="323" y2="119"/>
+    <line x1="400" y1="175" x2="371" y2="85"/>
+    <line x1="400" y1="175" x2="429" y2="85"/>
+    <line x1="400" y1="175" x2="477" y2="119"/>
+  </g>
+
+  <!-- Outer ring connections -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.18">
+    <line x1="495" y1="175" x2="477" y2="231"/>
+    <line x1="477" y1="231" x2="429" y2="265"/>
+    <line x1="429" y1="265" x2="371" y2="265"/>
+    <line x1="371" y1="265" x2="323" y2="231"/>
+    <line x1="323" y1="231" x2="305" y2="175"/>
+    <line x1="305" y1="175" x2="323" y2="119"/>
+    <line x1="323" y1="119" x2="371" y2="85"/>
+    <line x1="371" y1="85"  x2="429" y2="85"/>
+    <line x1="429" y1="85"  x2="477" y2="119"/>
+    <line x1="477" y1="119" x2="495" y2="175"/>
+  </g>
+
+  <!-- Skip-one cross connections -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.1">
+    <line x1="495" y1="175" x2="429" y2="265"/>
+    <line x1="305" y1="175" x2="371" y2="265"/>
+    <line x1="477" y1="119" x2="429" y2="265"/>
+    <line x1="323" y1="119" x2="371" y2="265"/>
+    <line x1="371" y1="85"  x2="305" y2="175"/>
+    <line x1="429" y1="85"  x2="495" y2="175"/>
+  </g>
+
+  <!-- Dashed lines to MCP boxes -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.25" stroke-dasharray="4 5">
+    <line x1="323" y1="231" x2="125" y2="318"/>
+    <line x1="477" y1="231" x2="675" y2="318"/>
+  </g>
+
+  <!-- Dashed lines to PYTHON AUTOMATION -->
+  <g stroke="#ffffff" stroke-width="0.5" opacity="0.2" stroke-dasharray="4 5">
+    <line x1="371" y1="265" x2="355" y2="352"/>
+    <line x1="429" y1="265" x2="445" y2="352"/>
+  </g>
+
+  <!-- Center node outer glow ring -->
+  <circle cx="400" cy="175" r="34" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.12"/>
+
+  <!-- Center node -->
+  <circle cx="400" cy="175" r="22" stroke="#ffffff" stroke-width="1" fill="#080808"/>
+  <circle cx="400" cy="175" r="14" stroke="#ffffff" stroke-width="0.5" fill="none" opacity="0.35"/>
+  <circle cx="400" cy="175" r="5"  fill="#ffffff" opacity="0.9"/>
+
+  <!-- Satellite nodes -->
+  <g stroke="#ffffff" stroke-width="0.75" fill="#080808">
+    <circle cx="495" cy="175" r="10"/>
+    <circle cx="477" cy="231" r="10"/>
+    <circle cx="429" cy="265" r="10"/>
+    <circle cx="371" cy="265" r="10"/>
+    <circle cx="323" cy="231" r="10"/>
+    <circle cx="305" cy="175" r="10"/>
+    <circle cx="323" cy="119" r="10"/>
+    <circle cx="371" cy="85"  r="10"/>
+    <circle cx="429" cy="85"  r="10"/>
+    <circle cx="477" cy="119" r="10"/>
+  </g>
+
+  <!-- Satellite center dots -->
+  <g fill="#ffffff" opacity="0.7">
+    <circle cx="495" cy="175" r="2.5"/>
+    <circle cx="477" cy="231" r="2.5"/>
+    <circle cx="429" cy="265" r="2.5"/>
+    <circle cx="371" cy="265" r="2.5"/>
+    <circle cx="323" cy="231" r="2.5"/>
+    <circle cx="305" cy="175" r="2.5"/>
+    <circle cx="323" cy="119" r="2.5"/>
+    <circle cx="371" cy="85"  r="2.5"/>
+    <circle cx="429" cy="85"  r="2.5"/>
+    <circle cx="477" cy="119" r="2.5"/>
+  </g>
+
+  <!-- MCP SERVER A — bottom left -->
+  <rect x="60" y="318" width="130" height="52" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <line x1="60" y1="332" x2="190" y2="332" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+  <text x="125" y="329" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">MCP SERVER</text>
+  <text x="125" y="346" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.7">STORAGE NODE</text>
+  <text x="125" y="360" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.4">PORT 8001</text>
+
+  <!-- MCP SERVER B — bottom right -->
+  <rect x="610" y="318" width="130" height="52" stroke="#ffffff" stroke-width="0.75" fill="none" opacity="0.7"/>
+  <line x1="610" y1="332" x2="740" y2="332" stroke="#ffffff" stroke-width="0.5" opacity="0.4"/>
+  <text x="675" y="329" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.5">MCP SERVER</text>
+  <text x="675" y="346" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.7">AUTOMATION</text>
+  <text x="675" y="360" font-family="monospace" font-size="7" fill="#ffffff" text-anchor="middle" opacity="0.4">PORT 8002</text>
+
+  <!-- PYTHON AUTOMATION box — bottom center -->
+  <rect x="278" y="352" width="244" height="36" stroke="#ffffff" stroke-width="1" fill="none"/>
+  <text x="400" y="374" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle">PYTHON AUTOMATION ENGINE</text>
+
+</svg>
