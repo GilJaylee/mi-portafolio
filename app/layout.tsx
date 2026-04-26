@@ -34,7 +34,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${dmSans.variable} ${dmMono.variable}`} style={{ background: '#080808' }}>
-      <body style={{ background: '#080808', minHeight: '100vh' }}>
+      <body>
         <ParticleBackground />
         <Preloader />
         <Cursor />
