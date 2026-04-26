@@ -46,15 +46,6 @@ html {
   cursor: none;
 }
 
-::selection {
-  background: #ffffff;
-  color: #080808;
-}
-
-::-moz-selection {
-  background: #ffffff;
-  color: #080808;
-}
 
 /* ── Global grain overlay ──────────────────────────────────────────────────
    The SVG filter alone produces no pixels — a <rect> must apply it.
@@ -70,4 +61,14 @@ body::after {
   background-repeat: repeat;
   background-size: 256px 256px;
   opacity: 0.035;
+}
+
+::selection {
+  background-color: #ffffff !important;
+  color: #080808 !important;
+}
+
+::-moz-selection {
+  background-color: #ffffff !important;
+  color: #080808 !important;
 }
