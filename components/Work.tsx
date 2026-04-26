@@ -52,7 +52,11 @@ export default function Work() {
       })
     })
 
-    ScrollTrigger.batch('.project-card', {
+    const cardEls = gsap.utils.toArray<HTMLElement>(
+      containerRef.current?.querySelectorAll('.project-card') ?? []
+    )
+
+    ScrollTrigger.batch(cardEls, {
       onEnter: (elements) => {
         gsap.to(elements, {
           y: 0,

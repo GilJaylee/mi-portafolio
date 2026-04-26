@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { gsap } from '@/lib/gsap'
 
 const DOT_COUNT    = 80
@@ -10,9 +10,13 @@ const REPEL_FORCE  = 28
 const DRIFT_MAX    = 0.15
 
 export default function ParticleBackground() {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {
+    if (!mounted) return
     const canvas = canvasRef.current
     if (!canvas) return
 
@@ -122,7 +126,9 @@ export default function ParticleBackground() {
       window.removeEventListener('mouseleave', onLeave)
       dots.forEach((d) => gsap.killTweensOf(d))
     }
-  }, [])
+  }, [mounted])
+
+  if (!mounted) return null
 
   return (
     <canvas

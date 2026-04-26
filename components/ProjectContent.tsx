@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '@/lib/gsap'
 import type { Project } from '@/lib/projects'
@@ -11,6 +11,9 @@ interface Props {
 }
 
 export default function ProjectContent({ project }: Props) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   const containerRef = useRef<HTMLElement>(null)
 
   useGSAP(() => {
@@ -31,6 +34,8 @@ export default function ProjectContent({ project }: Props) {
   useEffect(() => {
     return () => { ScrollTrigger.getAll().forEach((t) => t.kill()) }
   }, [])
+
+  if (!mounted) return <div style={{ minHeight: '100vh', background: '#080808' }} />
 
   return (
     <section ref={containerRef} className="bg-[#080808] px-6 py-24 md:px-12 lg:px-24">

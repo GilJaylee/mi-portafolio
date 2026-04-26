@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { notFound } from 'next/navigation'
 import { projects, getProjectBySlug, getAdjacentProject } from '@/lib/projects'
 import ProjectHero from '@/components/ProjectHero'

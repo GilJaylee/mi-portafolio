@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, SplitText, ScrollTrigger } from '@/lib/gsap'
 import type { Project } from '@/lib/projects'
@@ -10,6 +10,9 @@ interface Props {
 }
 
 export default function ProjectHero({ project }: Props) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
+
   const heroRef     = useRef<HTMLElement>(null)
   const titleRef    = useRef<HTMLHeadingElement>(null)
   const categoryRef = useRef<HTMLSpanElement>(null)
@@ -66,6 +69,8 @@ export default function ProjectHero({ project }: Props) {
   useEffect(() => {
     return () => { ScrollTrigger.getAll().forEach((t) => t.kill()) }
   }, [])
+
+  if (!mounted) return <div style={{ minHeight: '100vh', background: '#080808' }} />
 
   return (
     <section
